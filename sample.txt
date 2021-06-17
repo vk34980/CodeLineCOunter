@@ -1,0 +1,23 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+/**
+ *
+ * @author Vrion
+ */
+
+public class CountingCodeLines {
+    public static void main(String[] args) throws IOException{
+        File f = new File("C:\\sample1.txt");
+        FileReader fr = new FileReader(f);
+        BufferedReader br = new BufferedReader(fr);
+        int nr = LineCounter.getNumberOfLines(br);
+        System.out.println(nr);
+        
+    }
+
+    //Komenti i cili nuk shtohet ne listen e rreshtave te kodit
+
+}
